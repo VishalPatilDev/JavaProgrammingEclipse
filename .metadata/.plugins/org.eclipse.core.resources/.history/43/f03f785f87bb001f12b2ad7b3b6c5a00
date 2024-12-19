@@ -1,0 +1,18 @@
+package com.vishal.pac;
+
+public class EmployeeMain {
+	public static void main(String[] args) {
+		Employee ep = new Employee();
+		Developer d = new Developer();
+		Employee e= new Developer();
+		Employee er=new HR();
+//		e.attendance();                             //Developer Attendance will get called as the obj is of Developer class
+		//System.out.println(e.getSkillSet());       //getSkillSet() method is undefined for the type Employee
+		ep.setSal(10000);
+//		System.out.println(e.calSalary());
+		
+		System.out.println(ep.calSalary());
+		System.out.println(d.calSalary());
+		System.out.println(er.calSalary());
+	}
+}

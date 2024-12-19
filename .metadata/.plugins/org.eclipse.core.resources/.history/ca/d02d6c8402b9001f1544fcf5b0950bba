@@ -1,0 +1,38 @@
+
+package com.vishal.pac;
+
+public class MainApp {
+//	public static void main(String[] args) {
+////		Account a = new Account();
+//		Address add = new Address("Deccan","Pune");
+//		Account ref = new Account(1,"Vishal",234313,new Address("Warje","Pune"));
+//		
+////		System.out.println(ref.postal.loc);
+////		System.out.println(ref.postal.city);
+//		System.out.println(ref.hashCode());
+//	}
+	public static void main(String[] args) {
+		System.out.println("main(String[] args");
+		Main(args);
+		main1(args);
+		main(10);
+		MainApp m = null;
+		m.main2(args);
+	}
+	public static void main(int a) {
+		System.out.println("main(int a)");
+	}
+	public static void Main(String [] args) {
+		System.out.println("Main(String [] args");
+	}
+	public static void main1(String[] args) {
+		System.out.println("main1(String[] args");
+	}
+	public int main2(String[] args) {
+		System.out.println("main2(String[] args");
+		return 0;
+	}
+
+}
+
+//has a relationship is known as containnment

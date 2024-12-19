@@ -1,0 +1,10 @@
+package com.vishal.database;
+
+public class DatabaseMain {
+	public static void main(String[] args) {
+		Oracle o = new Oracle();
+		o.connect();
+		MySQL s = new MySQL();
+		s.connnect();
+	}
+}

@@ -1,0 +1,8 @@
+package com.vishal.interfaceDemo;
+
+public class Admin implements Employee{
+	public void print() {
+		System.out.println("Admin : Print");
+	}
+
+}
