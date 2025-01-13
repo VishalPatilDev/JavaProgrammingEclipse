@@ -1,8 +1,0 @@
-package com.vishal.pac;
-
-public class EmployeeMain {
-	public static void main(String[] args) {
-		Employee ep = new Employee();
-		Developer d = new Developer();
-	}
-}

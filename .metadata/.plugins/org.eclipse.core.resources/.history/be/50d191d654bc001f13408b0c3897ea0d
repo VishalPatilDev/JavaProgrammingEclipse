@@ -1,9 +1,0 @@
-package com.vishal;
-
-public abstract class Account {
-	int ac;
-	String acName;
-	public abstract void withdraw(double amount);
-	public abstract void deposit(double amount);
-
-}

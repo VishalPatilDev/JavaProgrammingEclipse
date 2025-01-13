@@ -1,8 +1,0 @@
-package com.vishal.database;
-
-public class Oracle {
-	public void connect(){
-		System.out.println("Oracle : Connect to Database");
-	}
-
-}

@@ -1,9 +1,0 @@
-package com.vishal.interfaceDemo;
-
-public class Developer implements Employee{
-	double salary;
-	public void print() {
-		System.out.println("Developer : Print");
-	}
-
-}
