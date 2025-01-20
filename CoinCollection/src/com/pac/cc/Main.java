@@ -16,12 +16,14 @@ public class Main {
          System.out.println("1. Add a Coin");
          System.out.println("2. Search Coins by Country");
          System.out.println("3. Display All Coins");
-         System.out.println("4. Bulf add coins from file");
-         System.out.println("5. Save to Database");
-         System.out.println("6. Exit");
+         System.out.println("4. Bulk add coins from file");
+         System.out.println("5. Delete Coin");
+         System.out.println("6. Update Coin");
+         System.out.println("7. Save to Database");
+         System.out.println("8. Exit");
          System.out.print("Enter your choice: ");
          int choice = scanner.nextInt();
-         scanner.nextLine(); // Consume newline
+         scanner.nextLine();
 
          switch (choice) {
              case 1:
@@ -45,25 +47,65 @@ public class Main {
                  System.out.print("Enter Country to Search: ");
                  String searchCountry = scanner.nextLine();
                  List<Coin> results = manager.searchByCountry(searchCountry);
-                 results.forEach(System.out::println);
+//                 results.forEach(System.out::println);
+                 
+                 for(Coin r : results) {
+                	 System.out.println(r);
+                 }
+//                 System.out.println(results);
                  break;
 
              case 3:
                  List<Coin> allCoins = manager.getAllCoins();
-                 allCoins.forEach(System.out::println);
-                 break;
+////                 allCoins.forEach(System.out::println);
+//                 for(Coin ac : allCoins) {
+//                	 System.out.println(ac);
+//                 }
+//                 break;
+                 if(allCoins.isEmpty()) {
+                 	System.out.println("The Table is Empty!");
+                 	break;
+                 }
+                 else {
+                	 manager.displayAllCoinsInTable();
+                	 break;
+                 }
+            	 
                  
              case 4:
             	    System.out.print("Enter file path for bulk upload: ");
             	    String filePath = scanner.nextLine();
             	    manager.bulkAddFromFile(filePath);
             	    break;
-
+            	    
              case 5:
-                 manager.saveToDatabase();
+                 System.out.print("Enter country of coin to delete: ");
+                 String deleteCountry = scanner.nextLine();
+                 manager.deleteCoinByCountry(deleteCountry);
                  break;
 
              case 6:
+                 System.out.print("Enter country of coin to update: ");
+                 String updateCountry = scanner.nextLine();
+                 System.out.print("Enter new Denomination: ");
+                 double newDenomination = scanner.nextDouble();
+                 System.out.print("Enter new Year of Minting: ");
+                 int newYear = scanner.nextInt();
+                 System.out.print("Enter new Current Value: ");
+                 double newValue = scanner.nextDouble();
+                 scanner.nextLine(); // Consume newline
+                 System.out.print("Enter new Acquired Date (YYYY-MM-DD): ");
+                 String newDate = scanner.nextLine();
+
+                 Coin updatedCoin = new Coin(updateCountry, newDenomination, newYear, newValue, newDate);
+                 manager.updateCoin(updateCountry, updatedCoin);
+                 break;
+
+             case 7:
+                 manager.saveToDatabase();
+                 break;
+
+             case 8:
                  System.out.println("Exiting the application.");
                  System.exit(0);
                  break;
