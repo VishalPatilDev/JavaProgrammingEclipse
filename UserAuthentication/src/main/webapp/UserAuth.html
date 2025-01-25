@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            background-color: antiquewhite;
+            height: 100vh;
+        }
+        .container{
+            justify-content: center;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            background-color: white;
+            border: 2px solid black;
+            width: 80%;
+            height: 400px;
+        }
+    </style>
+    <div class="container">
+    <form action="userAuth" method="get">
+      <input type="text" name="username" ></input>
+      <input type="text" name="password" ></input>
+      
+      <input type="submit" />
+    </form>
+</div>
+  </body>
+</html>
