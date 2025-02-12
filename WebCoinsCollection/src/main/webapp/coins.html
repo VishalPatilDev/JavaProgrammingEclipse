@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            background-color: antiquewhite;
+            height: 100vh;
+        }
+        .container{
+            justify-content: center;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            background-color: white;
+            border: 2px solid black;
+            width: 80%;
+            height: 400px;
+        }
+    </style>
+    <div class="container">
+    <form action="addCoins" method="get">
+        <input type="text" name="Country"></input>
+        <input type="text" name="Denomination"></input>
+        <input type="text" name="YearOfMinting"></input>
+        <input type="text" name="CurrentValue"></input>
+        <input type="text" name="AcquiredDate"></input>
+      <input type="submit" />
+    </form>
+</div>
+  </body>
+</html>

@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="FirstJavaEE_Prog" path="/FirstJavaEE_Prog" reloadable="true" source="org.eclipse.jst.jee.server:FirstJavaEE_Prog"/><Context docBase="HTML" path="/HTML" reloadable="true" source="org.eclipse.jst.jee.server:HTML"/><Context docBase="UserAuthentication" path="/UserAuthentication" reloadable="true" source="org.eclipse.jst.jee.server:UserAuthentication"/></Host>
+      <Context docBase="FirstJavaEE_Prog" path="/FirstJavaEE_Prog" reloadable="true" source="org.eclipse.jst.jee.server:FirstJavaEE_Prog"/><Context docBase="HTML" path="/HTML" reloadable="true" source="org.eclipse.jst.jee.server:HTML"/><Context docBase="UserAuthentication" path="/UserAuthentication" reloadable="true" source="org.eclipse.jst.jee.server:UserAuthentication"/><Context docBase="WebCoinsCollection" path="/WebCoinsCollection" reloadable="true" source="org.eclipse.jst.jee.server:WebCoinsCollection"/><Context docBase="ShoppingCart" path="/ShoppingCart" reloadable="true" source="org.eclipse.jst.jee.server:ShoppingCart"/></Host>
     </Engine>
   </Service>
 </Server>

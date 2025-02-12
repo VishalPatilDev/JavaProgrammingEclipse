@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: antiquewhite;
+            height: 100vh;
+        }
+        .container{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border: 2px solid black;
+            width: 100%;
+            height: 400px;
+            padding: 20px;
+        }
+        .form{
+          display: flex;
+          flex-direction: column;
+          flex-flow: column;
+          margin: 20px;
+          width: 200px;
+          justify-content: space-evenly;
+        }
+    </style>
+    <div class="container">
+    <form action="addToCart" method="post" class="form" >
+      <!-- <label for="item">Item Name:</label>
+      <input type="text" name="item" id="item"></input> -->
+      <img src="img" alt="">
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity"></input>
+
+      <input type="hidden" id="id"></input>
+
+      <!-- <label for="price">Price:</label>
+      <input type="text" name="price" id="price"></input>   
+
+      <label for="buyer">Buyer Name:</label>
+      <input type="text" name="buyer" id="buyer"></input> -->
+
+      <input type="submit" name="callToAction" value="Add_to_Cart" />
+      <input type="submit" name="callToAction" value="Check_Out" />
+    </form>
+</div>
+  </body>
+</html>

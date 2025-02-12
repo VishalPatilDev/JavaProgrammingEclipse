@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD - document Type defination - Older, Simpler, Simple Object
+XSD - XML Schema defination - Newer, Complex, Custom Complex Objects. -->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+<!--  one side benefit - you will get intellisence -->
+
+<hibernate-configuration>
+	<session-factory>
+		<property name = "hibernate.connection.driver-class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fbs_sql</property>
+		<!-- login is database name -->
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root123</property>
+		<property name="show_sql">true</property> <!-- show actual query on console -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<!-- dialect is language variation -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping class = "com.pac.user.User"></mapping>
+		
+	</session-factory>
+</hibernate-configuration>

@@ -19,4 +19,11 @@
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.pac.demo.DatabaseConnectivity"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.pac.ccw.CoinVerification"/>
+    <fullyQualifiedTypeName name="com.pac.demo.business.CartAddition"/>
+    <fullyQualifiedTypeName name="com.pac.demo.dataaccess.CartAccess"/>
+    <fullyQualifiedTypeName name="java.lang.ref.Reference"/>
+    <fullyQualifiedTypeName name="com.pac.user.User"/>
 </qualifiedTypeNameHistroy>

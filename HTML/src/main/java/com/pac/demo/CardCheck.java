@@ -32,14 +32,16 @@ public class CardCheck extends HttpServlet{
 		System.out.println("Card Deatils");
 		System.out.println("Card Number : "+num+"Card Holder Name : "+name+"Expiry date : "+exdate+"CVV : "+cvv);
 		PrintWriter out = res.getWriter();
-		out.println("Data Received");
+//		out.println("Data Received");
 		
 		
 		if(isVerified==true) {
-			out.println("<h1>Card Verified</h1>");
+			res.sendRedirect("http://www.google.com");
 		}
 		else {
 			out.println("Card is not verified");
 		}
+		
+		
 	}
 }
